@@ -1,0 +1,44 @@
+public class OOPSBannerUC7 {
+	public static class CharacterPatternMap(){
+		private char oops;
+		private String[] pattern;
+		
+		public CharacterPatternMap(char oops,String[] pattern){
+			this.oops=oops;
+			this.pattern=pattern;
+		}
+		public char getChar(){
+			return oops;
+		}
+		public String[] getPattern(){
+			return pattern;
+		}
+	}
+	public static void main(String[] args){
+		String[] Opattern={
+			" ***  ",
+			"*   * ",
+			"*   * " ,
+			"*   * " , 
+			" ***  " 
+			};
+		String[] Ppattern={
+			"****  " ,
+			"*   * " ,
+			"****  " , 
+			"*     " , 
+			"*     "  
+			};
+		String[] Spattern={
+			" **** ",
+			"*     ",
+			" ***  ",
+			"    * ",
+			" **** "
+			};
+		CharacterPatternMap objO= new CharacterPatternMap('O',Opattern);
+		CharacterPatternMap objP= new CharacterPatternMap('P',Ppattern);
+		CharacterPatternMap objS= new CharacterPatternMap('S',Spattern);
+		
+	}
+}
